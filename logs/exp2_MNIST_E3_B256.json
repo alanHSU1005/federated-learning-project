@@ -1,0 +1,173 @@
+{
+  "experiment": "exp2_batch_size",
+  "dataset": "MNIST",
+  "variable_key": "batch_size",
+  "variable_value": 256,
+  "global_rounds": 20,
+  "local_epochs": 3,
+  "batch_size": 256,
+  "best_test_accuracy": 0.9869,
+  "best_round": 20,
+  "history": [
+    {
+      "round": 1,
+      "test_accuracy": 0.7935,
+      "test_accuracy_pct": 79.35,
+      "test_loss": 0.720942,
+      "avg_train_loss": 0.853244,
+      "avg_train_acc": 0.750588
+    },
+    {
+      "round": 2,
+      "test_accuracy": 0.8906,
+      "test_accuracy_pct": 89.06,
+      "test_loss": 0.366262,
+      "avg_train_loss": 0.307644,
+      "avg_train_acc": 0.912456
+    },
+    {
+      "round": 3,
+      "test_accuracy": 0.9332,
+      "test_accuracy_pct": 93.32,
+      "test_loss": 0.230688,
+      "avg_train_loss": 0.17601,
+      "avg_train_acc": 0.948357
+    },
+    {
+      "round": 4,
+      "test_accuracy": 0.952,
+      "test_accuracy_pct": 95.2,
+      "test_loss": 0.162487,
+      "avg_train_loss": 0.124007,
+      "avg_train_acc": 0.964198
+    },
+    {
+      "round": 5,
+      "test_accuracy": 0.9578,
+      "test_accuracy_pct": 95.78,
+      "test_loss": 0.137009,
+      "avg_train_loss": 0.089912,
+      "avg_train_acc": 0.974145
+    },
+    {
+      "round": 6,
+      "test_accuracy": 0.9728,
+      "test_accuracy_pct": 97.28,
+      "test_loss": 0.09251,
+      "avg_train_loss": 0.071917,
+      "avg_train_acc": 0.978301
+    },
+    {
+      "round": 7,
+      "test_accuracy": 0.9756,
+      "test_accuracy_pct": 97.56,
+      "test_loss": 0.078899,
+      "avg_train_loss": 0.056781,
+      "avg_train_acc": 0.983085
+    },
+    {
+      "round": 8,
+      "test_accuracy": 0.976,
+      "test_accuracy_pct": 97.6,
+      "test_loss": 0.07362,
+      "avg_train_loss": 0.054653,
+      "avg_train_acc": 0.983789
+    },
+    {
+      "round": 9,
+      "test_accuracy": 0.977,
+      "test_accuracy_pct": 97.7,
+      "test_loss": 0.075689,
+      "avg_train_loss": 0.036552,
+      "avg_train_acc": 0.989228
+    },
+    {
+      "round": 10,
+      "test_accuracy": 0.9796,
+      "test_accuracy_pct": 97.96,
+      "test_loss": 0.061374,
+      "avg_train_loss": 0.043869,
+      "avg_train_acc": 0.986881
+    },
+    {
+      "round": 11,
+      "test_accuracy": 0.9817,
+      "test_accuracy_pct": 98.17,
+      "test_loss": 0.055801,
+      "avg_train_loss": 0.031285,
+      "avg_train_acc": 0.990787
+    },
+    {
+      "round": 12,
+      "test_accuracy": 0.9839,
+      "test_accuracy_pct": 98.39,
+      "test_loss": 0.05017,
+      "avg_train_loss": 0.029327,
+      "avg_train_acc": 0.991574
+    },
+    {
+      "round": 13,
+      "test_accuracy": 0.9816,
+      "test_accuracy_pct": 98.16,
+      "test_loss": 0.05217,
+      "avg_train_loss": 0.027068,
+      "avg_train_acc": 0.991914
+    },
+    {
+      "round": 14,
+      "test_accuracy": 0.9843,
+      "test_accuracy_pct": 98.43,
+      "test_loss": 0.050827,
+      "avg_train_loss": 0.030057,
+      "avg_train_acc": 0.990968
+    },
+    {
+      "round": 15,
+      "test_accuracy": 0.9839,
+      "test_accuracy_pct": 98.39,
+      "test_loss": 0.052094,
+      "avg_train_loss": 0.023046,
+      "avg_train_acc": 0.993276
+    },
+    {
+      "round": 16,
+      "test_accuracy": 0.9856,
+      "test_accuracy_pct": 98.56,
+      "test_loss": 0.047105,
+      "avg_train_loss": 0.023666,
+      "avg_train_acc": 0.99314
+    },
+    {
+      "round": 17,
+      "test_accuracy": 0.9858,
+      "test_accuracy_pct": 98.58,
+      "test_loss": 0.04423,
+      "avg_train_loss": 0.020233,
+      "avg_train_acc": 0.994168
+    },
+    {
+      "round": 18,
+      "test_accuracy": 0.9818,
+      "test_accuracy_pct": 98.18,
+      "test_loss": 0.05754,
+      "avg_train_loss": 0.016857,
+      "avg_train_acc": 0.995051
+    },
+    {
+      "round": 19,
+      "test_accuracy": 0.9826,
+      "test_accuracy_pct": 98.26,
+      "test_loss": 0.05498,
+      "avg_train_loss": 0.017113,
+      "avg_train_acc": 0.994946
+    },
+    {
+      "round": 20,
+      "test_accuracy": 0.9869,
+      "test_accuracy_pct": 98.69,
+      "test_loss": 0.041887,
+      "avg_train_loss": 0.019275,
+      "avg_train_acc": 0.994438
+    }
+  ]
+}
