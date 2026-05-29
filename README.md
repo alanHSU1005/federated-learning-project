@@ -23,6 +23,8 @@
 ├── logs/               # [自動生成] 存放各項實驗結果的 JSON 日誌檔案
 └── plots/              # [自動生成] 存放視覺化分析圖表（.png）
 
+---
+
 ## 🛠️ 環境安裝指南
 
 ### 安裝基礎依賴套件
@@ -32,8 +34,8 @@ pip install -r requirements.txt
 ## 🚀 實驗執行與運作說明書
 
 ### 1. 資料集事前準備
-MNIST：不需手動下載。啟動程式時，系統會自動下載並快取至本地。
 
+MNIST：不需手動下載。啟動程式時，系統會自動下載並快取至本地。
 AT&T Face Dataset：確保 40 個人的資料夾（s1/ 至 s40/）直接存放於根目錄下的 ./att_faces/ 路徑中。
 若不存在，請請自行下載並解壓。
 
@@ -53,7 +55,8 @@ python visualization.py
 
 # 補充 
 
-## 基線實驗設定 
+## 基線實驗設定
+
 ⚠️：以下設定為**實驗參考用 baseline**，實際實驗數據可依模型、資源與收斂情況進行調整
 
 ### MNIST
@@ -65,10 +68,12 @@ python visualization.py
 - Dirichlet α（Non-IID 程度）：0.5  
 
 #### 實驗一：Local Epochs 影響
+
 - Local epochs 變因：`[1, 3, 5]`  
 - 固定 Batch size：64  
 
 #### 實驗二：Batch Size 影響
+
 - Batch size 變因：`[16, 64, 256]`  
 - 固定 Local epochs：3  
 
