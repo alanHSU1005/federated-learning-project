@@ -42,7 +42,7 @@
 - **新增防禦核心**: `dp_defense.py`、`demo_attack_vs_defense_dp.py`
 - **修改系統接口**: 
   - `main.py`: 嵌入局部差分隱私 (LDP) 梯度干擾接口。
-  - `config.py`: 新增差分隱私超參數控制開關（剪裁閾值與噪聲強度）。
+  - `config.py`: 新增差分隱私控制開關。
 - **實驗成果輸出**: 儲存於 `demo_dp_outputs/`、`logs_dp/` 與 `plots_dp/`。
 - 
 ### 🛡️ 同態加密安全聚合防禦 (Step 3-1 Bonus)
