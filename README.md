@@ -39,9 +39,11 @@
 - **內建驗證機制**：切分完成後自動執行 assert 驗證 union 完整性與跨客戶端不重疊性
 - **Edge case 保護**：若極端 α 值導致空客戶端，自動執行最小量 rebalancing 確保不 crash
 ### 🛡️ local dp防禦 (Step 3)
-- **新增**:dp_defense.py  demo_attack_vs_defense_dp.py
-- **修改**:main.py:加入dp防禦接口   config.py:加入開關dp設定
-- **結果**:demo_dp_outputs/ logs_dp/ plots_dp
+- **新增防禦核心**: `dp_defense.py`、`demo_attack_vs_defense_dp.py`
+- **修改系統接口**: 
+  - `main.py`: 嵌入局部差分隱私 (LDP) 梯度干擾接口。
+  - `config.py`: 新增差分隱私超參數控制開關（剪裁閾值與噪聲強度）。
+- **實驗成果輸出**: 儲存於 `demo_dp_outputs/`、`logs_dp/` 與 `plots_dp/`。
 - 
 ### 🛡️ 同態加密安全聚合防禦 (Step 3-1 Bonus)
 採用微軟 SEAL 底層優化的 TenSEAL 庫 實作 CKKS 加密方案，專門應對半誠實中央伺服器（Honest-but-curious Server）的梯度逆向攻擊：
