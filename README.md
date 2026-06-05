@@ -39,10 +39,10 @@
 - **內建驗證機制**：切分完成後自動執行 assert 驗證 union 完整性與跨客戶端不重疊性
 - **Edge case 保護**：若極端 α 值導致空客戶端，自動執行最小量 rebalancing 確保不 crash
 ### 🛡️ local dp防禦 (Step 3)
-- **新增:dp_defense.py  demo_attack_vs_defense_dp.py
-- **修改:main.py:加入dp防禦接口   config.py:加入開關dp設定
-- **結果:demo_dp_outputs/ logs_dp/ plots_dp
-
+- **新增**:dp_defense.py  demo_attack_vs_defense_dp.py
+- **修改**:main.py:加入dp防禦接口   config.py:加入開關dp設定
+- **結果**:demo_dp_outputs/ logs_dp/ plots_dp
+- 
 ### 🛡️ 同態加密安全聚合防禦 (Step 3-1 Bonus)
 採用微軟 SEAL 底層優化的 TenSEAL 庫 實作 CKKS 加密方案，專門應對半誠實中央伺服器（Honest-but-curious Server）的梯度逆向攻擊：
 - **真實私鑰隔離**：客戶端持有包含私鑰的完整環境。中央伺服器端則強制將 Context 序列化為純公鑰環境，並內建 assert not has_secret_key() 雙重安全斷言，技術上絕對無法窺探或解密任何上傳之密文權重。
